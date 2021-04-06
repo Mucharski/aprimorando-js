@@ -1,12 +1,19 @@
 let contaTrue = () => {
 
-    let sortArray = new Array(true, false, false, true, true, false, true, true, true, false, true);
+    let sortArray = new Array(true, false, true, true, true, false, false, false, true, false, true);
     let guardaTrue = 0;
 
-    for(i = 0; i < sortArray.length; i++) {
-        if(sortArray[i] == true) {
-            guardaTrue++;
+    if (sortArray.length === 0) {
+        guardaTrue = 0;
+        console.log("Array vazio.")
+    } else {
+
+        for (i = 0; i < sortArray.length; i++) {
+            if (sortArray[i] == true) {
+                guardaTrue++;
+            }
         }
+
     }
 
     return guardaTrue;

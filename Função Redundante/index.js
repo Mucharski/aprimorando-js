@@ -2,14 +2,11 @@ let redundante = (stringRetorno) => {
 
 
     let str = () => {
-        return stringRetorno
+        return stringRetorno; // função apenas retorna a string
     }
 
-    return str();
+    return str(); //
 
 }
-
-
-
 
 console.log(redundante("Maçã"));
