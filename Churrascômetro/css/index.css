@@ -83,7 +83,7 @@ main {
 .imagens-churrasco {
     margin-top: 10px;
     margin-left: 50%;
-    width: 70%;
+    width: 80%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
@@ -91,10 +91,41 @@ main {
 
 .selecionar-imagem {
     border: 1px solid black;
+    outline: 0px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: outline 0.5s, background-color 0.5s;
+    transform: rotate(360deg)
+}
+
+.selecionar-imagem:not(:first-child){
+    margin-left: 10px;
 }
 
 .selecionar-imagem:hover {
     cursor: pointer;
+}
+
+@keyframes ativar {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes desativar {
+    0% {transform: rotate(360deg)}
+    100% {transform: rotate(0deg)}
+}
+
+.deactive {
+    animation-name: desativar;
+    animation-duration: 1s;
+}
+
+.active {
+    background-color: rgb(243, 243, 243);
+    outline: 2px solid red;
+    animation-name: ativar;
+    animation-duration: 1s;
 }
 
 .painel-footer {
@@ -128,7 +159,7 @@ main {
     }
     .painel-churrascometro {
         width: 70%;
-        height: 700px;
+        height: 800px;
     }
 }
 
