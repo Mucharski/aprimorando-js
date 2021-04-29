@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="index.js" defer></script>
+    <script src="index.js" type="module" defer></script>
     <title>Churrascômetro</title>
 </head>
 
@@ -46,18 +46,18 @@
                     <label for="duracao"><img src="./imgs/barbeque.png" class="imagem" width="32px"
                             height="32px" />Selecione o que terá no churrasco:</label>
                     <div class="imagens-churrasco">
-                        <img src="imgs/garlic.png" alt="Pão de Alho" class="selecionar-imagem" width="60px"
+                        <img src="imgs/garlic.png" id="paoDeAlho" alt="Pão de Alho" class="selecionar-imagem" width="60px"
                             height="60px">
-                        <img src="imgs/cheese.png" class="selecionar-imagem" width="60px" height="60px">
-                        <img src="imgs/beef.png" class="selecionar-imagem" width="60px" height="60px">
-                        <img src="imgs/fried-chicken.png" class="selecionar-imagem" width="60px" height="60px">
-                        <img src="imgs/softdrinks.png" class="selecionar-imagem" width="60px" height="60px">
-                        <img src="imgs/beer.png" class="selecionar-imagem" width="60px" height="60px">
+                        <img src="imgs/cheese.png" id="queijoCoalho" alt="Queijo Coalho" class="selecionar-imagem" width="60px" height="60px">
+                        <img src="imgs/beef.png" id="carne" alt="Carne" class="selecionar-imagem" width="60px" height="60px">
+                        <img src="imgs/fried-chicken.png" id="frango" alt="Frango" class="selecionar-imagem" width="60px" height="60px">
+                        <img src="imgs/softdrinks.png" id="refrigerante" alt="Refrigerante" class="selecionar-imagem" width="60px" height="60px">
+                        <img src="imgs/beer.png" id="cerveja" alt="Cerveja" class="selecionar-imagem" width="60px" height="60px">
                     </div>
                 </div>
             </div>
             <div class="painel-footer">
-                <button type="button" value="Calcular">CALCULAR</button>
+                <button type="button" value="Calcular" id="btnCalcular">CALCULAR</button>
             </div>
         </div>
     </main>
