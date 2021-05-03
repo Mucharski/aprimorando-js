@@ -284,7 +284,6 @@ main {
     }
     .painel-resultado {
         width: 90%;
-        transform: translateX(5%);
         height: 800px;
     }
     .flex-imagens-resultado {
