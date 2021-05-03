@@ -19,6 +19,10 @@ main {
     top: 40px;
 }
 
+.none {
+    display: none;
+}
+
 .painel-churrascometro {
     width: 100%;
     height: 800px;
@@ -104,13 +108,21 @@ main {
 }
 
 @keyframes ativar {
-    0% {transform: rotate(0deg)}
-    100% {transform: rotate(360deg)}
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
 @keyframes desativar {
-    0% {transform: rotate(360deg)}
-    100% {transform: rotate(0deg)}
+    0% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
 }
 
 .deactive {
@@ -146,8 +158,45 @@ main {
 }
 
 .painel-footer button:hover {
-    background-color: #fdfdfd;;
+    background-color: #fdfdfd;
+    ;
     cursor: pointer;
+}
+
+.painel-resultado {
+    display: none;
+    transform: translateX(25%);
+    width: 70%;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: 1.8rem;
+    background-color: white;
+}
+
+.flex-imagens-resultado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.imagem-resultado-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado-calculo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 80px;
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -191,5 +240,10 @@ main {
     .painel-churrascometro {
         width: 100%;
         height: 1000px;
+    }
+    .painel-resultado {
+        width: 90%;
+        transform: translateX(5%);
+        height: 800px;
     }
 }

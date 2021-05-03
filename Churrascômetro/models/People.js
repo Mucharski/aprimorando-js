@@ -3,7 +3,7 @@ export class Man {
         this.quantidade = quantidade;
         this.grama = 633;
         this.cerveja = 3;
-        this.refrigerante = 1;
+        this.refrigerante = 1; // garrafas de 2 litros
         this.paoDeAlho = 2;
         this.queijoCoalho = 3;
     }
