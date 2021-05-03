@@ -52,16 +52,16 @@ buttonCalc.addEventListener("click", () => {
         for (let i of imagens) { // pegou a variavel imagens la de baixo - hoisting
             let atributo = i.getAttribute("id");
             if (guardaAtivos.indexOf(atributo) == -1) { // se o elemento não existir no array guardaAtivos fica marcado como "X"
-                quantidadesArray[contador] = "N/A"
+                quantidadesArray[contador] = "N/A";
             }
             contador++;
         }
 
         let main = document.getElementsByTagName("main")[0];
-        main.classList.add("none")
+        main.classList.add("none");
 
         let painelResultado = document.getElementsByClassName("painel-resultado")[0];
-        painelResultado.style.display = "inline-block"
+        painelResultado.style.display = "inline-block";
 
         let quantidadesTela = document.getElementsByClassName("resultado-calculo");
 
@@ -71,6 +71,14 @@ buttonCalc.addEventListener("click", () => {
         }
     }
 }); // fim do listener
+
+btnVoltar.addEventListener("click", () => {
+    let main = document.getElementsByTagName("main")[0];
+    main.classList.remove("none");
+
+    let painelResultado = document.getElementsByClassName("painel-resultado")[0];
+    painelResultado.style.display = "none";
+})
 
 let imagens = document.querySelectorAll(".selecionar-imagem");
 
